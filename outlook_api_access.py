@@ -13,7 +13,13 @@ client_secret = 'fd15b289-9b8e-40f1-ac83-1577666d3c21'
 scopes = 'https://graph.microsoft.com/.default'
 
 token_endpoint = f'https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token'
-
+token_endpoint = f'https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?\ 
+client_id=11111111-1111-1111-1111-111111111111
+&response_type=code
+&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+&response_mode=query
+&scope=offline_access%20user.read%20mail.read
+&state=12345'
 client = OAuth2Session(client_id, client_secret, scope=scopes)
 # client = OAuth2Session(client_id, redirect_uri='http://localhost/auth-response', scope=scopes)
 token = client.fetch_token(token_endpoint, authorization_response='http://localhost/auth-response')
