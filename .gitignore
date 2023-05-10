@@ -1,2 +1,8 @@
 00_Data/
 .DS_Store
+02_Data_Ingestion/messages_v2.json
+02_Data_Ingestion/messages.json
+02_Data_Ingestion/thread-users.json
+02_Data_Ingestion/threads.json
+02_Data_Ingestion/user-threads.json
+02_Data_Ingestion/users.json
