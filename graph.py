@@ -60,6 +60,7 @@ class Graph:
             # Sort by received time, newest first
             orderby=['receivedDateTime DESC']
         )
+
         request_config = MessagesRequestBuilder.MessagesRequestBuilderGetRequestConfiguration(
             query_parameters= query_params
         )
@@ -68,4 +69,33 @@ class Graph:
         messages = await self.user_client.me.messages.get(request_configuration=request_config)
         return messages
 
-        
+    async def create_draft(self, importance: str, subject: str, body: str, recipient: str):
+        message = Message()
+        message.subject = subject
+
+        message.importance = importance
+
+        message.body = ItemBody()
+        message.body.content_type = BodyType.Text
+        message.body.content = body
+
+        to_recipient = Recipient()
+        to_recipient.email_address = EmailAddress()
+        to_recipient.email_address.address = recipient
+        message.to_recipients = []
+        message.to_recipients.append(to_recipient)
+
+
+
+
+
+
+
+
+
+        message.is_draft = True
+
+        # request_body = SendMailPostRequestBody()
+        # request_body.message = message
+
+        await self.user_client.me.messages.post(message)
