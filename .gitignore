@@ -9,3 +9,7 @@
 02_Data_Ingestion/.ipynb_checkpoints/
 03_Basic_NLG/.ipynb_checkpoints/
 99_Code_Resources/.ipynb_checkpoints/
+05_RRM/vectorstores
+05_RRM/vector_database
+05_RRM/gs:
+05_RRM/chroma
