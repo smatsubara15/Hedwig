@@ -37,13 +37,6 @@ def type_string(text):
         t.markdown("## %s" % text[0:i])
         time.sleep(0.005)
 
-# Set the title image path
-title_image_path = 'Hedwig Logo.jpeg'  # Replace with the actual path
-
-# Display the title and image side by side
-st.title("Hedwig.AI")
-
-st.image(title_image_path, use_column_width=False, width=100) 
 # Streamlit app layout
 st.title("Hedwig.AI")
 
