@@ -1,4 +1,4 @@
-00_Data/
+0;276;0c11;rgb:1111/1111/111111;rgb:1111/1111/11110;276;0c11;rgb:1111/1111/111111;rgb:1111/1111/11110;276;0c11;rgb:1111/1111/111111;rgb:1111/1111/11110;276;0c11;rgb:1111/1111/111111;rgb:1111/1111/111100_Data/
 .DS_Store
 02_Data_Ingestion/messages_v2.json
 02_Data_Ingestion/messages.json
@@ -14,3 +14,5 @@
 05_RRM/vector_database
 05_RRM/gs:
 05_RRM/chroma
+07_HumanValidation/vectorstores
+09_Post_Validation_Prompt/vectorstores
