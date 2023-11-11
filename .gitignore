@@ -15,4 +15,7 @@
 05_RRM/gs:
 05_RRM/chroma
 07_HumanValidation/vectorstores
-09_Post_Validation_Prompt/vectorstores
+08_PromptTuning/vectorstores
+04_Prelim_Langchain_Framework/vectorstores
+04_Prelim_Langchain_Framework/Hedwig
+
