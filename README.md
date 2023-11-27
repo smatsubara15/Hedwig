@@ -1,7 +1,8 @@
-# Hedwig.AI <img width="151" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/963688d8-6517-4a94-893a-f57735ff3d16">
+<img width="260" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/6f222272-3010-465e-9f9b-5b4357de3188">
 
 An LLM-based administrative assistant that mimics user writing styles and pre-writes email replies for executives, boosting professional and personal productivity by up to 25%
 
+-----
 ## Project Motivation 
 Professionals get hundreds of emails a day:
 * Many go unread
