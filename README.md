@@ -60,6 +60,8 @@ For our purpose, we cleaned and transmuted the data to build message-reply pairs
 **~25000 messages** reply conversations were identified, which became our modeling dataset
 <img width="897" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/c0ccbc0f-abfa-4675-bbc9-3cc84c8521d7">
 
+[Enron EDA + Cleaning Notebook](02_Data_Ingestion/20230520_Enron_EDA.ipynb)
+
 ### 2B - Human Verification Data
 We used close to 250 personal emails to mimic a local testing environment for our tool.
 This helps refine our prompts further and add human context to our analysis.
