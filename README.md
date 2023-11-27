@@ -77,6 +77,7 @@ We add **Retrieval Augmentation** frameworks to our LLM as Personalization eleme
 The following modular framework embeds personalization elements in each step of your email generation. 
 <img width="1151" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/3be03324-baa7-4e1c-b8d5-c22d8f41c782">
 
+[Personalization Framework Notebook](08_PromptTuning/20231111_FinalPipeline.ipynb)
 
 ------
 ### Level 0 - Memory
@@ -101,6 +102,8 @@ These three memory features are re-instated in every step of the Personalization
 * MMR Search selects examples based on a combination of which emails are most similar to the sender's email, while also optimizing for diversity.
 
 <img width="1188" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/06ed05b0-0f2a-479d-a20f-e69a08c9d14c">
+
+[VectorStore Creation Notebook](05_Prelim_Personalization/20231015_RRM_Chroma_Vector_Stores.ipynb)
 
 ----
 ### Level 2 - Local Context
@@ -131,7 +134,7 @@ The Chicago Manual of Style Online is the venerable, time-tested guide to style
 The final text generation chain takes:
 * Contextual Email from Level 2
 * Writing Style adjectives from Level 3A
-* Memory is integrated with each step of the LLM Chain, and reinforced in the final prompt
+* Memory is integrated with each step of the LLM Chain and reinforced in the final prompt
 
 This step gives us our final output.
 <img width="1086" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/b7433f3b-57ef-45bc-a7ee-23f2e8621aa6">
@@ -149,6 +152,7 @@ Rather than fine-tuning our LLM, we emphasized toggling the model parameters and
 * The base notebook is located here.
 * The entire codebase was productized using Streamlit and deployed on HuggingFace Spaces
 
+[Streamlit Integration Notebook](10_Streamlit/Streamlit_Demo_Final.py)
 
 ## 6. Acknowledgements <a name="acknowledgments"></a>
 
@@ -157,9 +161,10 @@ Rather than fine-tuning our LLM, we emphasized toggling the model parameters and
 [Website](https://bit.ly/3PS0oiK)
 [LinkedIn](https://www.linkedin.com/in/k-mittal)
 
+- [Scott Matsubara](https://github.com/smatsubara15)
+[LinkedIn](https://www.linkedin.com/in/scott-matsubara-079232161)
+
 - [Radhika Sharma](https://github.com/janesmith)
-  
-- [Scott Matsubara](https://github.com/bobjohnson)
   
 - [Sunvid Aneja](https://github.com/bobjohnson)
 
