@@ -1,8 +1,6 @@
 # Hedwig.AI <img width="151" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/963688d8-6517-4a94-893a-f57735ff3d16">
 
-
 An LLM-based administrative assistant that mimics user writing styles and pre-writes email replies for executives, boosting professional and personal productivity by up to 25%
-
 
 ## Project Motivation 
 Professionals get hundreds of emails a day:
@@ -25,10 +23,10 @@ Being an LLM-powered administrative assistant, Hedwing handles the following:
 
 1. [Concept Overview](#introduction)
 2. [Data Overview](#data_overview)
-4. [Personalization Framework](#personalization)
-6. [Prompt Fine-Tuning](#prompt)
-7. [Model Fine-Tuning](#model)
-8. [Credits](#acknowledgments)
+3. [Personalization Framework](#personalization)
+4. [Prompt Fine-Tuning](#prompt)
+5. [User Interface](#ui_ux)
+6. [Acknowledgements](#acknowledgments)
 
 
 ## 1. Concept Overview <a name="introduction"></a>
@@ -130,8 +128,36 @@ The Chicago Manual of Style Online is the venerable, time-tested guide to style
 The final text generation chain takes:
 * Contextual Email from Level 2
 * Writing Style adjectives from Level 3A
-* Memory is integrated with each step of  the LLM Chain, and reinforced in the final prompt
+* Memory is integrated with each step of the LLM Chain, and reinforced in the final prompt
 
 This step gives us our final output.
 <img width="1086" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/b7433f3b-57ef-45bc-a7ee-23f2e8621aa6">
+
+## 4. Prompt Framework <a name="prompt"></a>
+Rather than fine-tuning our LLM, we emphasized toggling the model parameters and fine-tuning the prompt to extract maximum generative power without GPU cost constraints.
+
+<img width="1094" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/c83a6b16-89a7-44a3-bf5a-3d35da6c9ca0">
+
+#### We built a multi-prompt approach, with each LLM endpoint emphasizing one task
+<img width="1085" alt="image" src="https://github.com/smatsubara15/Hedwig/assets/72986557/facb57b2-2376-426f-bc9b-e53d2026f13e">
+
+
+## 5. User Interface <a name="ui_ux"></a>
+* The base notebook is located here.
+* The entire codebase was productized using Streamlit and deployed on HuggingFace Spaces
+
+
+## 6. Acknowledgements <a name="acknowledgments"></a>
+
+- [Kshitij Mittal](https://github.com/kshitij-mittal)
+
+[Website](https://bit.ly/3PS0oiK)
+[LinkedIn](https://www.linkedin.com/in/k-mittal)
+
+- [Radhika Sharma](https://github.com/janesmith)
+  
+- [Scott Matsubara](https://github.com/bobjohnson)
+  
+- [Sunvid Aneja](https://github.com/bobjohnson)
+
 
