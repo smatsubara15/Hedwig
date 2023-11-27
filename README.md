@@ -162,6 +162,7 @@ Rather than fine-tuning our LLM, we emphasized toggling the model parameters and
 [LinkedIn](https://www.linkedin.com/in/k-mittal)
 
 - [Scott Matsubara](https://github.com/smatsubara15)
+
 [LinkedIn](https://www.linkedin.com/in/scott-matsubara-079232161)
 
 - [Radhika Sharma](https://github.com/janesmith)
